@@ -13,7 +13,7 @@ const Vehicles = (props) => {
                 console.log(resp)
                 setData(resp.data)
             })
-            .catch(err => console.log(err))
+            .catch(err => setData())
     }, [id])
     return (
         <div>
